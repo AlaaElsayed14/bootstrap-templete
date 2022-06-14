@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #636161;
+}
+/*************************** start nav ***********************/
+nav{
+    background-color: #6c757dbc;
+}
+nav .navbar-brand img{
+    width: 40px;
+}
+
+nav .logo-desc{
+    color: #ccc;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 12px;
+    border-right: 1.3px solid #ccc;
+}
+
+nav .nav-link{
+    color: #ccc !important;
+    font-weight: 500;
+    padding:  0 7px;
+    font-size: 17px;
+}
+nav .form-control input{
+    background-color: #ccc;
+}
+
+nav .dropdown-menu {
+    font-size: 1rem;
+    top: 130%;
+    background-color: #e7e7fce0;
+}
+nav .dropdown-menu .dropdown-item {
+    text-shadow: 1px 1px 0px black;
+    color: rgb(153, 203, 252);
+}
+nav .dropdown-item:hover {
+    font-size: 1rem;
+    color: rgb(216, 216, 216)
+}
+
+nav  .dropdown-item:active {
+    background-color: #0d6efd;
+}
+
+nav .dropdown-divider{
+    border-top: 2px solid rgba(144, 143, 143, 0.52);
+}
+
+ .modal{
+    color: rgb(114, 113, 113);
+}
+ nav .modal{
+   z-index: 1000;
+ }
+ nav .modal h5{
+    color: rgb(118, 117, 117);
+ }
+
+nav .modal-body input{
+    display: block;
+}
+.modal-body .custom-control-input{
+    margin-left: -4em;
+}
+.searh-input{
+    opacity: .8;
+}
+
+@media (max-width:991px) {
+    nav .nav-link{
+        margin-bottom: 17px;
+    }
+    .form-control.searh-input{
+        width: 85%;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:575px) {
+    .searh-input{
+        width: 70%;
+        margin-right: 20px;
+    }
+    
+}
+/*************************** end nav ***********************/
+/*************************** start login section ***********************/
+/* .login{
+    position: absolute;
+    top:-100%;
+    left: 36%;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: all ease-in .3s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+.login.loginShow {
+    top: 5%;
+}
+
+.login .icon-close{
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  font-size: 20px;
+}
+
+.login button[type="submit"]{
+    margin-top: 10px;
+}
+
+.login #closeBtn{
+    float:right;
+    margin-bottom: 20px;
+} */
+
+/*************************** end login section ***********************/
+
+/*************************** start main ***********************/
+
+main .carousel-inner{
+    height: 580px;
+   
+}
+main .carousel-item{
+    height: 580px;
+}
+main .carousel-item img{
+    height:100%;
+}
+main .carousel-inner .carousel-caption {
+    background-color: rgba(200, 200, 200, 0.475);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+/*************************** end main ***********************/
+
+/******************** start welcome section *********************/
+.welcome .card{
+    border-top-left-radius: 0;
+    border-top-right-radius:0;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+/********************** end welcome section *******************/
+
+
+/********************** start programming section *******************/
+
+.programing .card-header{
+    padding: 0;
+    margin: 0;
+}
+
+.programing .card-header:hover{
+    background-color: #212529;
+}
+.programing .card-header .btn-link{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.programing .card-header:hover .btn-link{
+    color: rgb(233, 232, 232) !important;
+    text-decoration: none;
+}
+
+.programing .card-header .btn-link:active{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0.344);
+    background-color: #86b7fe;
+    text-decoration: none;
+    border: 0;
+    color: #033786;
+}
+
+.btn-link:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.programing .btn-link i{
+    font-size: 18px;
+    color: #212529;
+}
+.programing .btn-link:hover i{
+   color: #fff;
+}
+/********************** end programming section *******************/
+/********************** start languages section *******************/
+.languages .card{
+    border: 0;
+}
+.languages .card-body{
+    font-size: 25px;
+}
+.languages .card-body a{
+    text-decoration: underline;
+    color: #86b7fe;
+}
+.languages .card-body a:hover{
+    color: #fff;
+}
+
+.languages .copy-btn{
+    position: relative;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+.languages .copy-btn::before{
+    position: absolute;
+    content: "copy to clipboard";
+    bottom:-160%;
+    left: -16%;
+    width: 77px;
+    height: 50px;
+    background-color: #b5dbfc;
+    color: #212529;
+    font-size: 15px;
+    z-index: 3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.languages .copy-btn::after{
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 30%;
+    border-top: 8px solid #b5dbfc;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #b5dbfc;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.languages .copy-btn:hover::before ,.python .copy-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.languages .copy-btn:active:before{
+    content: "copied";
+    height: 25px;
+    bottom:-92%;
+}
+.languages code{
+    display: block;
+    margin-top: 30px;
+    margin-left: 110px;
+    font-size: 20px;
+}
+
+@media (max-width:767px) {
+    .languages code{
+    
+        margin-top: 60px;
+        margin-left: 20px;
+        font-size:17px;
+    }
+}
+
+/********************** end languages section *******************/
+
+/********************** satrt fixedImg section *******************/
+.fixed-img{
+    background-image: url(../images/خلفيات-كمبيوتر-موقع-محيط-_182048401_-__.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    background-position: center ;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.fixed-2{
+    background-image: url(../images/images.jpg);
+    height: 250px;
+}
+/********************** end fixedImg section *******************/
+/******************** start language-cards section *****************/
+.language-cards .col{
+    padding: 2px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center
+}
+
+@media (max-width:991px) {
+    .language-cards .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/******************** end language-cards section *****************/
+/******************** start contacts section *****************/
+.contacts .icon{
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+}
+.contacts .icon img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.contacts .card-link{
+    text-decoration: underline;
+    color: #86b7fe;
+}
+
+.contacts .card-link:hover{
+    color: #fff;
+}
+
+.contacts h7{font-weight: 500;}
+/******************** end contacts section *****************/
+/******************** start footer *****************/
+footer{padding-bottom: 50px;}
+footer h5 img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 17px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.footer-contact a{
+    color: rgb(185, 206, 252);
+    text-decoration: underline;
+}
+footer h5 , .footer-bottom{
+    border-top: 1.5px solid #949494d3;
+    border-bottom: 1.5px solid #949494d3;
+}
+
+footer h5{    
+    padding: 10px 0;
+}
+
+.footer-bottom{
+    margin-top: 20px;
+    padding: 20px 0 10px ;
+
+}
+
+/******************** end footer *****************/
+
+
+
